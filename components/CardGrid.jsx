@@ -1,6 +1,6 @@
 import React from 'react'
 import RestaurantCard from './RestaurantCard'
-import './styles.css'
+import '@/app/globals.css'
 
 export default function CardGrid() {
   const mockData = [
