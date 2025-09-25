@@ -218,3 +218,77 @@ main {
   background: white;
   font-size: 13px;
 }
+
+/* ---------- GRID of restaurant cards ---------- */
+.grid {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 16px;
+}
+
+/* card */
+.card {
+  background: var(--white);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  display:flex;
+  flex-direction:column;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(17,24,39,0.08);
+}
+.card img {
+  width:100%;
+  height: 190px;
+  object-fit: cover;
+  display:block;
+}
+.card .body {
+  padding: 14px 16px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.card h3 {
+  margin:0;
+  font-size: 16px;
+  font-weight:700;
+  color: #111827;
+}
+.card .meta {
+  color: var(--muted-2);
+  font-size: 13px;
+  margin-top: 4px;
+}
+.card .price {
+  margin-top: 8px;
+  font-weight:700;
+  color: #111827;
+  font-size: 14px;
+}
+.card .rating {
+  display:flex;
+  gap:6px;
+  align-items:center;
+  font-size: 13px;
+  color: var(--muted-2);
+  margin-top:6px;
+}
+.card .rating .stars {
+  color: var(--green-star);
+  margin-right:6px;
+}
+.card .fav {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px;
+  padding: 6px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+}
