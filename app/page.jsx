@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import HeroSearch from './components/HeroSearch'
-import FilterSidebar from './components/FilterSidebar'
-import ResultsHeader from './components/ResultsHeader'
-import CardGrid from './components/CardGrid'
-import Pagination from './components/Pagination'
-import Footer from './components/Footer'
+import Navbar from '@/components/Navbar'
+import HeroSearch from '@/components/HeroSearch'
+import FilterSidebar from '@/components/FilterSidebar'
+import ResultsHeader from '@/components/ResultsHeader'
+import CardGrid from '@/components/CardGrid'
+import Pagination from '@/components/Pagination'
+import Footer from '@/components/Footer'
 import './styles.css'
 
 export default function Home() {
