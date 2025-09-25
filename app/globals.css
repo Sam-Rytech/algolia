@@ -322,3 +322,20 @@ main {
   border: none;
   box-shadow: 0 8px 20px rgba(43,123,246,0.12);
 }
+/* dot pages */
+.pagination span { color: var(--muted-2); font-size: 14px; padding: 0 6px; }
+
+/* ---------- Footer ---------- */
+.footer {
+  border-top:1px solid rgba(16,24,32,0.04);
+  padding: 28px 0;
+  margin-top: 40px;
+  background: transparent;
+}
+.footer .container {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color: var(--muted-2);
+  font-size: 13px;
+}
