@@ -190,3 +190,31 @@ body {
 /* small ratings column (stars) */
 .filters .stars { display:flex; gap:6px; align-items:center; margin-top:6px; }
 .filters .stars .star { color: var(--green-star); font-size: 14px; }
+/* ---------- MAIN (Results) ---------- */
+main {
+  min-height: 300px;
+}
+.results-summary {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+.results-summary p {
+  margin: 0;
+  color: var(--muted-2);
+  font-size: 14px;
+}
+.results-summary .controls {
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.results-summary select {
+  padding:8px 12px;
+  border-radius:8px;
+  border:1px solid var(--card-border);
+  background: white;
+  font-size: 13px;
+}
