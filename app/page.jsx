@@ -6,7 +6,7 @@ import ResultsHeader from '@/components/ResultsHeader'
 import CardGrid from '@/components/CardGrid'
 import Pagination from '@/components/Pagination'
 import Footer from '@/components/Footer'
-import './styles.css'
+import './globals.css'
 
 export default function Home() {
   return (
