@@ -292,3 +292,10 @@ main {
   padding: 6px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.06);
 }
+/* small card footer spacing if needed */
+.card-footer {
+  padding: 10px 16px;
+  border-top: 1px solid rgba(16,24,32,0.03);
+  font-size: 13px;
+  color: var(--muted-2);
+}
