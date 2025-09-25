@@ -339,3 +339,29 @@ main {
   color: var(--muted-2);
   font-size: 13px;
 }
+
+/* ---------- Responsiveness ---------- */
+@media (max-width: 1050px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .hero { height: 280px; }
+  .hero .search { width: 86%; }
+}
+
+@media (max-width: 880px) {
+  .content { grid-template-columns: 1fr; padding: 0 16px; }
+  aside { order: 2; } /* move filters below on mobile */
+  main { order: 1; }
+  .grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 28px; padding: 0 8px; }
+  .hero .search { width: 92%; }
+  .navbar .nav-links { display:none; }
+  .navbar .actions { margin-left: auto; }
+}
+
+@media (max-width: 420px) {
+  .hero { height: 220px; }
+  .hero h1 { font-size: 20px; }
+  .hero .search { width: 95%; padding: 10px; }
+  .card img { height: 160px; }
+  .container { padding: 0 12px; }
+}
